@@ -3,13 +3,20 @@ using UnityEngine.UI;
 
 public class Lives : MonoBehaviour
 {
-    public static int numLives;
+
+    public static int CurrentLife = SceneNavigation.StartLife;
     public Text LivesLeft;
 
-    void Start()
+
+
+    void Update()
     {
-        numLives = PlayerPrefs.GetInt("lives");
-        LivesLeft.text = "Lives: " + numLives.ToString();
+        LivesLeft.text = ("Lives: " + CurrentLife.ToString());
+
+        if (CurrentLife <= 0)
+        {
+            LivesLeft.text = "Lives: 0";
+        }
     }
 
 

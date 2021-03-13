@@ -519,10 +519,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 806983593}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67bbbf2b938aab24eb920bc61c0646fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 214a017e2531e994194366d1524a65f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 806983595}
+  score: {fileID: 806983595}
 --- !u!1 &816082936
 GameObject:
   m_ObjectHideFlags: 0
@@ -1154,6 +1154,7 @@ MonoBehaviour:
   time: {fileID: 0}
   pinSpeed: {fileID: 0}
   NumOfLives: {fileID: 0}
+  check: 0
 --- !u!114 &1767312849
 MonoBehaviour:
   m_ObjectHideFlags: 0

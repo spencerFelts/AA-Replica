@@ -29,7 +29,11 @@ public class Pin : MonoBehaviour
             isPinned = true;
         } else if (col.tag == "Pin")
         {
-            FindObjectOfType<GameManager>().EndGame();
+            Lives.CurrentLife = Lives.CurrentLife - 1;
+            //FindObjectOfType<GameManager>().EndGame();
+            //SceneManager.LoadScene("Credit Screen");
+        } else if (Lives.CurrentLife <= 0)
+        {
             SceneManager.LoadScene("Credit Screen");
         }
     }
